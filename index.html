@@ -39,6 +39,57 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 button:focus-visible,input:focus-visible{outline:2px solid var(--green2);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
+
+/* PIXEL-CRAFT UI — inspired by the supplied ZEXO app screenshots */
+:root{--bg:#171819;--surface:#202225;--surface2:#292c30;--line:#34383d;--green:#62d64d;--green2:#a2f58b;--radius:3px}
+body{background:#171819;color:#f8f8f8;font-family:system-ui,"Arial Black",sans-serif;font-weight:650;letter-spacing:.05px}
+body:before{opacity:.06;background-size:22px 22px;mask-image:linear-gradient(to bottom,#000,transparent 75%)}
+.app{max-width:760px}
+.top{background:#171819f2;border-bottom:2px solid #25282b}
+.brand{font-weight:1000;letter-spacing:1px;text-shadow:2px 2px #000}
+.brandmark{border-radius:0;clip-path:polygon(0 5px,5px 5px,5px 0,calc(100% - 5px) 0,calc(100% - 5px) 5px,100% 5px,100% calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) 100%,5px 100%,5px calc(100% - 5px),0 calc(100% - 5px));box-shadow:0 4px 0 #326d28,0 6px 0 #101510}
+.balance{border-radius:2px;background:#252b27;border:2px solid #3b4540;box-shadow:0 3px 0 #0e1110}
+.avatar{border-radius:2px;background:#2a2d30;border:2px solid #3d4247}
+.welcome h1,.sectionhead h2{font-weight:1000;text-shadow:2px 2px 0 #000}
+.eyebrow{color:#8df477;text-shadow:1px 1px #000}
+.quick,.tile,.banner,.profilebox,.setting{border-radius:2px}
+.quick{border:3px solid #34383b;box-shadow:0 5px 0 #0b0c0d,0 8px 0 #292c2f,inset 0 2px 0 #ffffff13;transform:none}
+.quick:after{border-radius:0;transform:rotate(45deg);border:2px solid #ffffff20}
+.quick:hover{transform:translateY(-2px);box-shadow:0 7px 0 #0b0c0d,0 10px 0 #292c2f}
+.quick:active{transform:translateY(3px);box-shadow:0 1px 0 #0b0c0d}
+.tile{border:3px solid #303438;box-shadow:0 5px 0 #0c0d0e,0 8px 0 #292c30;transition:transform .13s ease,filter .13s ease}
+.tile:hover{transform:translateY(-2px);border-color:#5b695d;box-shadow:0 7px 0 #0c0d0e,0 10px 0 #292c30}
+.tileart{border-bottom:3px solid #151719;background-image:linear-gradient(135deg,#347b3d,#1a3521)}
+.tileart:before{background-size:12px 12px;opacity:.75}
+.tileart span{font-size:43px;image-rendering:pixelated;text-shadow:3px 3px 0 #111,5px 5px 0 #0008}
+.tilebody{padding:10px}
+.tilebody h3{font-weight:1000;text-shadow:1px 1px #000}
+.tilebody p{color:#c0c3c4}
+.banner{border:3px solid #405a3d;box-shadow:0 5px 0 #0c0d0e,0 8px 0 #29332a}
+.banner h2{font-weight:1000;text-shadow:2px 2px #000}
+.btn{border:3px solid #8ef57c;border-radius:0;background:#60d34a;color:#071307;font-weight:1000;text-shadow:0 1px #c7ffb9;padding:9px 15px;clip-path:polygon(0 5px,5px 5px,5px 0,calc(100% - 5px) 0,calc(100% - 5px) 5px,100% 5px,100% calc(100% - 5px),calc(100% - 5px) calc(100% - 5px),calc(100% - 5px) 100%,5px 100%,5px calc(100% - 5px),0 calc(100% - 5px));box-shadow:0 5px 0 #287a24,0 7px 0 #101510,inset 0 2px 0 #ffffff55;transform:translateY(-2px)}
+.btn:hover{transform:translateY(-4px);filter:brightness(1.12);box-shadow:0 7px 0 #287a24,0 9px 0 #101510}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #287a24}
+.mini{border:2px solid #4b5550;border-radius:0;background:#2b2f32;color:#fff;box-shadow:0 3px 0 #111,inset 0 1px #ffffff18;transform:translateY(-2px);font-weight:950}
+.mini:hover{transform:translateY(-3px);filter:brightness(1.2)}
+.mini:active{transform:translateY(2px);box-shadow:0 1px #111}
+.price{color:#9af47d;text-shadow:1px 1px #000}
+.searchrow input{border:2px solid #34383d;border-radius:0;background:#202225}
+.chips button{border:2px solid #34383d;border-radius:0;background:#222528;color:#f2f2f2;box-shadow:0 3px 0 #0e0f10;font-weight:950}
+.chips button.selected{background:#5ed34b;border-color:#8df477;color:#0a1608;box-shadow:0 4px 0 #2b7928}
+.profilebox{border:3px solid #34383d;background:#202225;box-shadow:0 5px 0 #0b0c0d}
+.skinpreview{border-radius:0;border:2px solid #41464a}
+.setting{border:2px solid #34383d;background:#202225;box-shadow:0 3px 0 #0d0e0f;border-radius:0}
+.setting .ico{border-radius:0;background:#303438}
+.mobile{background:#202225f7;border-top:3px solid #34383d}
+.mobile button{font-weight:950;color:#d0d2d2}
+.mobile button.active{color:#071307;background:#61d64c;border:3px solid #91f47d;box-shadow:0 4px 0 #287a24,0 6px 0 #0c0d0e;transform:translateY(-7px);border-radius:0}
+.mobile button.active span{filter:none;transform:none}
+.desktopnav button.active{background:#5ed34b;color:#0a1608;border-radius:0;box-shadow:0 3px 0 #287a24}
+footer{border-color:#34383d;color:#a1a5a6}
+.toast{border-radius:0;border:2px solid #8df477;box-shadow:0 4px 0 #287a24}
+@media(max-width:700px){.app{padding-left:14px;padding-right:14px}.tilegrid{gap:12px}.tileart{height:112px}.quickgrid{gap:12px}.mobile{padding-top:9px}.mobile button{font-size:10px}.mobile button span{font-size:21px}}
+
 </style>
 </head>
 <body><div class="app">
