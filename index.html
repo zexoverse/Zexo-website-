@@ -112,6 +112,56 @@ body{background:#171819;font-family:system-ui,Arial,sans-serif;letter-spacing:0}
 @media(min-width:701px){.app{max-width:680px}.homegrid{display:block}.tilegrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:390px){.screen-title h1{font-size:25px}.coin-card{height:150px}.skin-stage{height:270px}.skin-figure{font-size:105px}.pose-controls button{padding:10px 12px}.more-feature{height:145px}}
 
+
+/* FINAL PIXEL-MARKETPLACE PASS — aligned to the five supplied mobile references */
+:root{
+  --bg:#171819;--surface:#202225;--surface2:#292c30;--line:#34383d;
+  --white:#f8f8f8;--muted:#b9bec0;--green:#62d64d;--green2:#a2f58b;
+}
+html,body{background:#171819}
+body{color:#f8f8f8;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{max-width:680px}
+.top{background:#171819;border-bottom:2px solid #25282b}
+.screen-title h1,.sectionhead h2{font-weight:1000;letter-spacing:-.35px;text-shadow:2px 2px 0 #090a0b}
+.quick,.feature-card,.mode-card,.coin-card,.modpack-card,.event-card,.server-row,
+.more-feature,.more-profile,.skin-card,.catalog-item{border-radius:0}
+.feature-card,.mode-card,.coin-card,.modpack-card,.skin-card,.more-feature{
+  box-shadow:0 5px 0 #101112,0 8px 0 #303337;
+}
+.feature-card:before,.mode-card:before,.coin-card:before,.modpack-card:before{
+  border-color:#34383d;
+}
+.btn{
+  border:3px solid #8ef57c;border-radius:0;background:#60d34a;color:#071307;
+  font-weight:1000;box-shadow:0 5px 0 #287a24,0 7px 0 #101510,inset 0 2px 0 #ffffff55;
+}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #287a24}
+.tile,.catalog-item,.event-card,.server-row,.setting,.profilebox{
+  background:#202225;border-color:#34383d;border-radius:0;
+  box-shadow:0 4px 0 #101112;
+}
+.tileart,.catalog-thumb{image-rendering:pixelated}
+.tilebody h3,.catalog-info h3,.more-feature b,.skin-card b{font-weight:1000}
+.price{color:#a2f58b}
+.searchrow input{background:#202225;border:2px solid #34383d;border-radius:0}
+.chips button{border-radius:0;border:2px solid #34383d;background:#222528;box-shadow:0 3px 0 #0e0f10}
+.chips button.selected{background:#60d34a;border-color:#8df477;color:#081408;box-shadow:0 4px 0 #287a24}
+.mobile{background:#202225f7;border-top:3px solid #34383d}
+.mobile button{color:#e0e2e2;font-weight:950}
+.mobile button.active{
+  color:#071307;background:#61d64c;border:3px solid #91f47d;
+  box-shadow:0 4px 0 #287a24,0 6px 0 #0c0d0e;transform:translateY(-7px);
+}
+.mobile button.active span{filter:none;transform:none}
+@media(max-width:700px){
+  .app{padding-left:14px;padding-right:14px}
+  .tilegrid,.mode-grid,.skin-grid,.coin-grid,.more-feature-grid,.more-link-grid{gap:12px}
+  .tileart{height:112px}
+  .mobile{padding-top:9px}
+  .mobile button{font-size:10px}
+  .mobile button span{font-size:21px}
+}
+
 </style>
 </head>
 <body><div class="app">
